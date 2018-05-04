@@ -1,0 +1,5 @@
+let bloodinfo = `Blood groups are based on the type of blood cells a person has. Each biological parent donates one of two ABO genes to their child.  The A and B genes are dominant and the O gene is recessive. For example, if an O gene is paired with an A gene, the blood type will be A.`;
+
+let bloodinfoc = `Blood groups are based on antigens that occur on the outer surface of blood cells. Humans have two copies of the gene for blood group on chromosome pair number 9. There are three alleles of this gene: A, B, and O. The A and B alleles are co-dominant. If both an A and B allele are inherited, both are expressed. O is a recessive allele. If an A or B gene is inherited along with the O gene, the A or B gene determines the person’s blood type. A person is type O only if they inherit two O genes. 
+
+As there are 4 different maternal blood types and 4 different paternal blood types possible, there are 16 different combinations to consider when predicting blood group.`;

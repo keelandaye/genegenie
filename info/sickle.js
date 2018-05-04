@@ -1,0 +1,1 @@
+let sickleinfo = `Sickle cell anemia (SCD) is an inherited disorder of the hemoglobin in blood. It requires the inheritance of two sickle cell genes. Virtually all of the major symptoms of sickle cell anemia are the direct result of the abnormally shaped sickled red blood cells blocking the flow of blood.`;

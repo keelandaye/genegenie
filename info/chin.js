@@ -1,0 +1,5 @@
+﻿let chininfo = `Cleft chin is a facial characteristic that looks like a dimple or an indentation to a person’s chin. It is caused by the failure of the lower half of the jaw to fuse together during fetal development.  It is an inherited physical trait which is observed more prominently in men than in women.`;
+
+
+
+let chininfoc = `Cleft chin is a dominant trait. The dominant trait is symbolised by C, while the recessive gene is symbolized by c. In order for a child to have a cleft chin, they must inherit the gene for cleft chin from their parents. If the child inherits two cleft chin genes from their parents, they will develop cleft chin by being homozygous to the trait (CC). If they inherit only one cleft gene from his parents, they would still develop cleft chin by being heterozygous to the trait (Cc). If no cleft gene is inherited from the parents, the child will develop the normal chin.`;

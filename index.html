@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GeneGenie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">GeneGenie</a></h1>
+						<!--<nav id="nav">-->
+						<!--	<ul>-->
+						<!--		<li class="special">-->
+						<!--			<a href="#menu" class="menuToggle"><span>Menu</span></a>-->
+						<!--			<div id="menu">-->
+						<!--				<ul>-->
+						<!--					<li><a href="index.html">Home</a></li>-->
+						<!--					<li><a href="generic.html">Generic</a></li>-->
+						<!--					<li><a href="elements.html">Elements</a></li>-->
+						<!--					<li><a href="#">Sign Up</a></li>-->
+						<!--					<li><a href="#">Log In</a></li>-->
+						<!--				</ul>-->
+						<!--			</div>-->
+						<!--		</li>-->
+						<!--	</ul>-->
+						<!--</nav>-->
+					</header>
+
+				<style>
+				    div a[href*="https://www.000webhost.com/"] {
+				        visibility: hidden !important;
+				    }
+					.qimg {
+						height:100px;
+						width:auto;
+						border-radius:100px;
+						border:3px solid white;
+						margin-bottom:10px;
+						margin-right:5px;
+						margin-left:5px;
+					}
+					.qimg:hover {
+						height:110px;
+						margin-bottom:0px;
+						margin-right:0px;
+						margin-left:0px;
+					}
+					.qimg:active, .selected {
+						border:8px solid white;
+					}
+					a[href="#skip"] {
+						font-size:12px;
+					}
+					.skipped {
+						display: none;
+					}
+					#banner, #qresults {
+					    background-color: #7EBDC3;
+					}
+				</style>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2><span style="font-size:50px;">G</span>ene<span style="font-size:50px;">G</span>enie</h2>
+							<p>A genetic trait prediction algorithm</p>
+						</div>
+						<a href="#qone" class="more">Get Started</a>
+					</section>
+
+				<!-- Eye Colour // Mother -->
+					<section id="qone" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What colour are the mother's eyes?</h2>
+								<p><a href="#eyesinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qtwo" id="meyesbrown"><img class="qimg" src="images/questions/brown eye.png" /></a></li>
+								<li><a href="#qtwo" id="meyesgreen"><img class="qimg" src="images/questions/green eye.png" /></a></li>
+								<li><a href="#qtwo" id="meyesblue"><img class="qimg" src="images/questions/blue eye.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Eye Colour // Father -->
+					<section id="qtwo" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What colour are the father's eyes?</h2>
+								<p><a href="#eyesinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qthree" id="feyesbrown"><img class="qimg" src="images/questions/brown eye.png" /></a></li>
+								<li><a href="#qthree" id="feyesgreen"><img class="qimg" src="images/questions/green eye.png" /></a></li>
+								<li><a href="#qthree" id="feyesblue"><img class="qimg" src="images/questions/blue eye.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Blood Type // Mother -->
+					<section id="qthree" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What is the mother's blood type?</h2>
+								<p><a href="#bloodinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qfour" id="mblooda"><img class="qimg" src="images/questions/A.png" /></a></li>
+								<li><a href="#qfour" id="mbloodb"><img class="qimg" src="images/questions/B.png" /></a></li>
+								<li><a href="#qfour" id="mbloodab"><img class="qimg" src="images/questions/AB.png" /></a></li>
+								<li><a href="#qfour" id="mbloodo"><img class="qimg" src="images/questions/O.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Blood Type // Father -->
+					<section id="qfour" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What is the father's blood type?</h2>
+								<p><a href="#bloodinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qfive" id="fblooda"><img class="qimg" src="images/questions/A.png" /></a></li>
+								<li><a href="#qfive" id="fbloodb"><img class="qimg" src="images/questions/B.png" /></a></li>
+								<li><a href="#qfive" id="fbloodab"><img class="qimg" src="images/questions/AB.png" /></a></li>
+								<li><a href="#qfive" id="fbloodo"><img class="qimg" src="images/questions/O.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Cleft Chin // Mother -->
+					<section id="qfive" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the mother have a cleft chin?</h2>
+								<p><a href="#chininfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qsix" id="mchiny"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qsix" id="mchinn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Cleft Chin // Father -->
+					<section id="qsix" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the father have a cleft chin?</h2>
+								<p><a href="#chininfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qseven" id="fchiny"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qseven" id="fchinn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Dimples // Mother -->
+					<section id="qseven" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the mother have dimples?</h2>
+								<p><a href="#dimplesinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qeight" id="mdimplesy"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qeight" id="mdimplesn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Dimples // Father -->
+					<section id="qeight" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the father have dimples?</h2>
+								<p><a href="#dimplesinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qnine" id="fdimplesy"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qnine" id="fdimplesn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Hair // Mother -->
+					<section id="qnine" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What type of hair does the mother have?</h2>
+								<p><a href="#hairinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qten" id="mhairstraight"><img class="qimg" src="images/questions/straight hair.jpg" /></a><br><h4>Straight</h4></li>
+								<li><a href="#qten" id="mhairwavy"><img class="qimg" src="images/questions/wavy hair.jpg" /></a><br><h4>Wavy</h4></li>
+								<li><a href="#qten" id="mhaircurly"><img class="qimg" src="images/questions/curly hair.jpg" /></a><br><h4>Curly</h4></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Hair // Father -->
+					<section id="qten" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What type of hair does the father have?</h2>
+								<p><a href="#hairinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qresults" id="fhairstraight"><img class="qimg" src="images/questions/straight hair.jpg" /></a><br><h4>Straight</h4></li>
+								<li><a href="#qresults" id="fhairwavy"><img class="qimg" src="images/questions/wavy hair.jpg" /></a><br><h4>Wavy</h4></li>
+								<li><a href="#qresults" id="fhaircurly"><img class="qimg" src="images/questions/curly hair.jpg" /></a><br><h4>Curly</h4></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+				
+				    <section id="diseasests" class="style4 special" style="height: 50px; padding-top: 10px;">
+				        <a href="#togglediseases">See genetic disorders</a>
+				    </section>
+					
+				<!-- GENETIC DISEASES -->
+				<div id="diseases">
+				<!-- Marfan // Mother -->
+					<section id="qeleven" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the mother have Marfan Syndrome?</h2>
+								<p><a href="#marfaninfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qtwelve" id="mmarfany"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qtwelve" id="mmarfann"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Marfan // Father -->
+					<section id="qtwelve" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Does the father have Marfan Syndrome?</h2>
+								<p><a href="#marfaninfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qthirteen" id="fmarfany"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qthirteen" id="fmarfann"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+				
+				<!-- Sickle Cell // Mother -->
+					<section id="qthirteen" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Is the mother a carrier of Sickle Cell Disease?</h2>
+								<p><a href="#sickleinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qfourteen" id="msickley"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qfourteen" id="msicklen"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Sickle Cell // Father -->
+					<section id="qfourteen" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Is the father a carrier of Sickle Cell Disease?</h2>
+								<p><a href="#sickleinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qfifteen" id="fsickley"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qfifteen" id="fsicklen"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+					
+				<!-- Cystic Fibrosis // Mother -->
+					<section id="qfifteen" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Is the mother a carrier of Cystic Fibrosis?</h2>
+								<p><a href="#cysticinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qsixteen" id="mcysticy"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qsixteen" id="mcysticn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+
+				<!-- Cystic Fibrosis // Father -->
+					<section id="qsixteen" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Is the father a carrier of Cystic Fibrosis?</h2>
+								<p><a href="#cysticinfo">Learn more</a></p>
+							</header>
+
+							<ul class="icons major">
+								<li><a href="#qresults" id="fcysticy"><img class="qimg" src="images/questions/Yes.png" /></a></li>
+								<li><a href="#qresults" id="fcysticn"><img class="qimg" src="images/questions/No.png" /></a></li>
+							</ul>
+							<p><a href="#skip">Skip question</a></p>
+						</div>
+					</section>
+                </div>
+
+				<!-- Results -->
+					<section id="qresults" class="wrapper special style4">
+						<div class="inner">
+							<header>
+								<h2>Quiz finished</h2>
+								<p>Based on your answers, we can predict the genetic traits of the child. Click the button below to see our preditions.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="#submit" class="button fit">Get Results</a></li>
+							</ul>
+						</div>
+					</section>
+                
+			</div>
+
+
+		<form method="GET" action="predict.php">
+			<input type="hidden" id="meyes" name="meyes" value="" />
+			<input type="hidden" id="feyes" name="feyes" value="" />
+			<input type="hidden" id="mblood" name="mblood" value="" />
+			<input type="hidden" id="fblood" name="fblood" value="" />
+			<input type="hidden" id="mchin" name="mchin" value="" />
+			<input type="hidden" id="fchin" name="fchin" value="" />
+			<input type="hidden" id="mdimples" name="mdimples" value="" />
+			<input type="hidden" id="fdimples" name="fdimples" value="" />
+			<input type="hidden" id="mhair" name="mhair" value="" />
+			<input type="hidden" id="fhair" name="fhair" value="" />
+			<input type="hidden" id="mmarfan" name="mmarfan" value="" />
+			<input type="hidden" id="fmarfan" name="fmarfan" value="" />
+			<input type="hidden" id="msickle" name="msickle" value="" />
+			<input type="hidden" id="fsickle" name="fsickle" value="" />
+			<input type="hidden" id="mcystic" name="mcystic" value="" />
+			<input type="hidden" id="fcystic" name="fcystic" value="" />
+		</form>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		
+		<!-- Info files -->
+		<script src="info/eyes.js"></script>
+		<script src="info/blood.js"></script>
+		<script src="info/chin.js"></script>
+		<script src="info/dimples.js"></script>
+		<script src="info/hair.js"></script>
+		<script src="info/marfan.js"></script>
+		<script src="info/sickle.js"></script>
+		<script src="info/cystic.js"></script>
+
+		<!-- Selected question -->
+		<script>
+			$(function() {
+  				$(".qimg").on('click', function() {
+  					$(this).parentsUntil('section').children().find('img').removeClass("selected");
+    				$(this).addClass("selected");
+  				});
+			});
+			$(function() {
+  				$(".qcircle").on('click', function() {
+  					$(this).parentsUntil('section').children().find('.qcircle').removeClass("selected");
+    				$(this).addClass("selected");
+  				});
+			});
+		</script>
+
+		<!-- Skip -->
+		<script>
+			$('a[href^="#skip"]').on('click', function(e) {
+				e.preventDefault();
+				$(this).parentsUntil('#page-wrapper').slideUp('slow');
+			});
+		</script>
+
+		<!-- Form inputs -->
+		<script src="form.js"></script>
+
+		<!-- Submit form -->
+		<script>
+			$('a[href^="#submit"]').on('click', function() {
+				window.onbeforeunload = null;
+				$("form").submit();
+			});
+		</script>
+
+		<!-- Scrolling and Info boxes -->
+		<script>
+			$('a[href^="#eyesinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Eye Colour", eyesinfo, {
+					buttons: {
+						more: {
+							text: "See more",
+							value: "more",
+						},
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Eye Colour", eyesinfoc);
+					}
+				});
+			});
+			$('a[href^="#bloodinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Blood Type", bloodinfo, {
+					buttons: {
+						more: {
+							text: "See more",
+							value: "more",
+						},
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Blood Type", bloodinfoc);
+					}
+				});
+			});
+			$('a[href^="#chininfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Cleft Chin", chininfo, {
+					buttons: {
+						more: {
+							text: "See more",
+							value: "more",
+						},
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Cleft Chin", chininfoc);
+					}
+				});
+			});
+			$('a[href^="#dimplesinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Dimples", dimplesinfo, {
+					buttons: {
+						more: {
+							text: "See more",
+							value: "more",
+						},
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Dimples", dimplesinfoc);
+					}
+				});
+			});
+			$('a[href^="#hairinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Hair Type", hairinfo, {
+					buttons: {
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Dimples", dimplesinfoc);
+					}
+				});
+			});
+			$('a[href^="#marfaninfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Marfan Syndrome", marfaninfo, {
+					buttons: {
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Dimples", dimplesinfoc);
+					}
+				});
+			});
+			$('a[href^="#cysticinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Cystic Fibrosis", cysticinfo, {
+					buttons: {
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Dimples", dimplesinfoc);
+					}
+				});
+			});
+			$('a[href^="#sickleinfo"]').on('click', function(e) {
+				e.preventDefault();
+				swal("Sickle Cell Anaemia", sickleinfo, {
+					buttons: {
+						close: {
+							text: "Close",
+							value: "close",
+						},
+					},
+				}).then((value) => {
+					switch (value) {
+						case "more":
+							swal("Dimples", dimplesinfoc);
+					}
+				});
+			});
+
+
+			$('a[href^="#q"]').on('click', function(e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').animate({
+					'scrollTop': $target.offset().top - $(window).height()/3
+				}, 1000, 'swing');
+			});
+		</script>
+		
+		<!-- Toggle Diseases -->
+		<script>
+		    $(document).ready(function() {
+		        $("#diseases").hide();
+		    });
+		    $('a[href^="#togglediseases"]').on('click', function(e) {
+		        e.preventDefault();
+		        $("#diseases").show();
+		        
+		        var $target = $("#qeleven");
+		        $('html, body').animate({
+					'scrollTop': $target.offset().top - $(window).height()/3
+				}, 1000, 'swing');
+		    });
+		</script>
+
+	</body>
+</html>

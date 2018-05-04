@@ -1,0 +1,4 @@
+let eyesinfo = `The main factor that determines eye colour is the amount and pattern of the dark brown pigment melanin in the iris, which is determined by genes.`;
+
+let eyesinfoc = `The alleles for eye colour can be separated into blue, green and brown. Brown alleles are dominant over both blue and green alleles, but green alleles are dominant over blue alleles. If you received a blue allele and a brown allele, your eye colour would be brown because brown is the dominant allele. If you have blue eyes, that means you received blue alleles from both parents. Genes also determine eye colour by decide how much melanin is produced in the iris. If more melanin is produced,the eye color will be darker. Since melanin production does not begin at birth, newborn babies' eyes appear blue. True eye color can be ascertained with time. A child's true permanent eye color does not usually reveal itself until age three.
+`;

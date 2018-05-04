@@ -1,0 +1,2 @@
+let cysticinfo=`Cystic Fibrosis is a genetic disease that causes problems in the respiratory and digestive systems.  People with cystic fibrosis produce very thick, sticky mucus which clogs airways, leading to bacterial infections, and blocks digestive enzymes from leaving the pancreas.   Cystic fibrosis is passed on in an autosomal recessive genetic inheritance pattern.  This means that two copies of the gene must be passed on.
+`;

@@ -1,0 +1,5 @@
+﻿let dimplesinfo = `Dimples are a dominant genetic trait and are inherited from one generation to another. Dimples on both cheeks are a common occurrence, while a single dimple that occurs on one side of the face is relatively rare. As dimples are a dominant trait, only one gene is required to inherit dimples.`;
+
+
+
+let dimplesinfoc = `Dimples are genetic defects that are caused by shortened facial muscles. Dimples are transferred from parents to children due to just one gene. If both parents have dimples, the children have a 50-100% chance of inheriting dimples. If, however, only one parent has dimple genes, the chance of the children inheriting the genes if neither of the parents have dimples there is a 0% chance that their children will have them. However, their children can pass recessive dimple genes to future generations. Dimples can be passed through multiple generations of a family.`;
