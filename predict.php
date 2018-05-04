@@ -7,8 +7,8 @@ $chin = true;
 $dimples = true;
 $hair = true;
 $marfan = true;
-$sickle = true;
 $cystic = true;
+$cysticsib = true;
 
 //Checking inputs
 //Eyes
@@ -89,20 +89,7 @@ if($_GET['fmarfan']) {
     $marfan = false;
 }
 
-//Sickle Cell
-if($_GET['msickle']) {
-    $msickle = $_GET['msickle'];
-} else {
-    $sickle = false;
-}
-
-if($_GET['fsickle']) {
-    $fsickle = $_GET['fsickle'];
-} else {
-    $sickle = false;
-}
-
-//cystic
+//Cystic Fibrosis
 if($_GET['mcystic']) {
     $mcystic = $_GET['mcystic'];
 } else {
@@ -113,6 +100,18 @@ if($_GET['fcystic']) {
     $fcystic = $_GET['fcystic'];
 } else {
     $cystic = false;
+}
+
+if($_GET['mcysticsib']) {
+    $mcysticsib = $_GET['mcysticsib'];
+} else {
+    $cysticsib = false;
+}
+
+if($_GET['fcysticsib']) {
+    $fcysticsib = $_GET['fcysticsib'];
+} else {
+    $cysticsib = false;
 }
 
 //Prediction algorithms
@@ -275,13 +274,26 @@ if ($marfan) {
 	}
 }
 
-//Sickle Cell
-
-$mlsickle = 100;
-
 //Cystic Fibrosis
-
-$mlcystic = 100;
+if($mcystic == "y" && $fcystic == "y") {
+    $mlcystic = 100;
+} else if (($mcystic == "y" || $fcystic == "y") && ($mcysticsib == "y" || $fcysticsib == "y")) {
+    if($mcystic == "y" && $fcysticsib == "y") {
+        $mlcystic = 25;
+    } else if ($fcystic == "y" && $mcysticsib == "y") {
+        $mlcystic = 25;
+    } else {
+       $mlcystic = 2.5; 
+    }
+} else if ($mcysticsib == "y" && $fcysticsib == "y") {
+    $mlcystic = 6.25;
+} else if(($mcystic == "n" || $fcystic == "n") && ($mcysticsib == "y" || $fcysticsib == "y")) {
+    $mlcystic = 0.625;
+} else if ($mcystic == "y" || $fcystic == "y") {
+    $mlcystic = 2.5;
+} else {
+    $mlcystic = 0.0625;
+}
 
 
 //Setting session variables
@@ -302,9 +314,6 @@ $_SESSION['mlhair'] = $mlhair;
 
 $_SESSION['marfan'] = $marfan;
 $_SESSION['mlmarfan'] = $mlmarfan;
-
-$_SESSION['sickle'] = $sickle;
-$_SESSION['mlsickle'] = $mlsickle;
 
 $_SESSION['cystic'] = $cystic;
 $_SESSION['mlcystic'] = $mlcystic;
